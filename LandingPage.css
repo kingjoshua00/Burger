@@ -9,7 +9,6 @@
 }
 
 @keyframes section{
-    /* transform: translateY(70px); */
     0%{transform: translate(-500px, 70px);}
     100%{transform: translate(0, 70px);}
 }
