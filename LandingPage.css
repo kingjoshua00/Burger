@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Ovsyanka;
+    src: url(./fonts/Ovsyanka.ttf);
+}
+
+@font-face {
+    font-family: Ovsyanka-press;
+    src: url(./fonts/Ovsyanka-press.ttf);
+}
+
+@keyframes section{
+    /* transform: translateY(70px); */
+    0%{transform: translate(-500px, 70px);}
+    100%{transform: translate(0, 70px);}
+}
+
+@keyframes burger{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(36px);}
+    100%{transform: translateY(0);}
+}
+
+body{
+    overflow-y: hidden;
+    margin: 0;
+}
+
+header{
+    background-image: url(./img/hero-bg.jpg);
+    height: 100vh;
+    padding: 25px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav1{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.nav1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: fonts/Ovsyanka-press;
+}
+
+.nav1 a:hover, .nav2 i{
+    transform: scale(1.1);
+    color: orange;
+}
+
+.nav2{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+}
+
+.burger{
+    height: 540px;
+    position: absolute;
+    right: 25px;
+    animation-name: burger;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0.9;
+}
+
+
+section{
+    position: relative;
+    display: inline-block;
+    /* margin: 150px auto; */
+    transform: translateY(70px);
+    width:auto;
+    animation-name: section;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    /* border: 2px solid white; */
+}
+
+section input:hover{
+    background: rgb(59, 59, 59);
+    color: orange;
+    border: 1px solid;
+}
+
+section img{
+    height: 70px;
+    position: absolute;
+    right: -10px;
+    top: -50px;
+    opacity: 0.4;
+}
+.ani-text{
+    font-size: 80px;
+    font-family: ovsyanka-press;
+    color: white;
+    margin: 5px auto;
+}
+
+.ani-text2{
+    font-size: 40px;
+    color: gray;
+    margin: 10px auto;
+}
+
+input{
+    padding: 5px 12px;
+    margin: 20px auto;
+    font-size: large;
+    color: black;
+    background-color: orange;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.footer{
+    position: relative;
+}
+
+.footer img{
+    position: absolute;
+    top: 80px;
+    opacity: 0.8;
+}
+
+.footer p{
+    font-family: ovsyanka-press;
+    font-size: 50px;
+    color: orange;
+    opacity: 0.3;
+    transform: translateY(150px);
+}
