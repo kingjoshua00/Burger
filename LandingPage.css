@@ -140,3 +140,54 @@ input{
     opacity: 0.3;
     transform: translateY(150px);
 }
+
+.footer-mobile-view{
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+    body{
+        overflow-y: auto;
+        background-image: url(./img/hero-bg.jpg);
+        background-repeat: repeat;
+    }
+
+    .burger{
+        display: none;
+    }    
+
+    .nav1 img{
+        transform: scale(0.7);
+    }
+
+    .nav1 a{
+        display: none;
+    }
+
+    section img{
+        transform: scale(0.8);
+        top: -40px;
+    }
+
+    .ani-text{
+        font-size: 50px;
+    }
+
+    .ani-text2{
+        font-size: larger;
+    }
+
+    .footer p{
+        display: block;
+        font-family: ovsyanka-press;
+        font-size: 20px;
+        color: orange;
+        opacity: 1;
+    }
+
+    .footer img{
+        max-width: 50px;
+        transform: translateY(100%);
+    }
+}
